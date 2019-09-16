@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "410201377277",
+    "firebase_url": "https://lostfound-99a5f.firebaseio.com",
+    "project_id": "lostfound-99a5f",
+    "storage_bucket": "lostfound-99a5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410201377277:android:ec0cf74fbe19de49d33194",
+        "android_client_info": {
+          "package_name": "com.example.lostfound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410201377277-e4d91ct668pb8tf6tq3tabrirt3baob0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lostfound",
+            "certificate_hash": "7017371b6de81a558fa6b4878d1dbeeab7f8a38a"
+          }
+        },
+        {
+          "client_id": "410201377277-1hhk11epoc18laq8l8k5ulomia0e2754.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbrpHd9EVz8vB_V1TBo4mazlerJi5NYuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410201377277-1hhk11epoc18laq8l8k5ulomia0e2754.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
