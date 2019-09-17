@@ -51,7 +51,7 @@ public class CadastroActivity extends AppCompatActivity {
                 // VALIDAR SE OS CAMPOS FORAM PREENCHIDOS
                 if (!textoNome.isEmpty()){
                     if(!textoEmail.isEmpty()){
-                        if(!textoSenha.isEmpty() && (textoSenha.equals(textoConfirmaSenha))){
+                        if(!textoSenha.isEmpty()){
                             //SE TODOS OS CAMPOS ESTIVEREM PREENCHIDOS
                             usuario = new Usuario();
                             usuario.setEmail(textoEmail);
