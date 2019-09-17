@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="textbtcadastrar">#FD0CE6B9</color>
+    <color name="textlostfound">#FD0F2722</color>
+
+
+    <color name="startColor">#008577</color>
+    <color name="endColor">#FD0CE6B9</color>
+
 </resources>

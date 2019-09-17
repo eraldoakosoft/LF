@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_layout1"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,20 +12,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Lost and Found"
+        android:text="@string/lostandfound"
         android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/fui_linkColor"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
+        android:textColor="@color/textbtcadastrar"
+        android:background="@drawable/background"
         android:onClick="btnCadastar"
-        android:text="CADASTRE-SE"
+        android:text="@string/cadastrese"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -34,8 +40,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/background"
+        android:textColor="@color/textbtcadastrar"
         android:onClick="btnEntrar"
-        android:text="jÁ TENHO CONTA"
+        android:text="@string/jatenhoconta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />

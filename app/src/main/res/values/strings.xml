@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">LostFound</string>
     <string name="criesuacontagratis">Crie sua conta grátis</string>
+    <string name="nome">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="btcadastrar">CADASTRAR</string>
+    <string name="lostandfound">Lost and Found</string>
+    <string name="cadastrese">CADASTRE-SE</string>
+    <string name="jatenhoconta">JÁ TENHO CONTA</string>
 </resources>
