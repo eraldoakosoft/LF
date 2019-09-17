@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class CadastroActivity extends AppCompatActivity {
 
-    private EditText campoNome, campoEmail, campoSenha, campoCEP;
+    private EditText campoNome, campoEmail, campoSenha, campoCEP, campoConfirmSenha;
     private Button botaoCadastrar;
 
     private static FirebaseAuth autenticacao;
@@ -33,6 +33,7 @@ public class CadastroActivity extends AppCompatActivity {
         campoNome = findViewById(R.id.txtNome);
         campoEmail = findViewById(R.id.txtEmail);
         campoSenha = findViewById(R.id.txtSenha);
+        campoConfirmSenha = findViewById(R.id.txtConfirmaSenha);
         botaoCadastrar = findViewById(R.id.btnCadastra);
 
 
@@ -44,12 +45,13 @@ public class CadastroActivity extends AppCompatActivity {
                 String textoNome = campoNome.getText().toString();
                 String textoSenha = campoSenha.getText().toString();
                 String textoEmail = campoEmail.getText().toString();
+                String textoConfirmaSenha = campoConfirmSenha.getText().toString();
 
 
                 // VALIDAR SE OS CAMPOS FORAM PREENCHIDOS
                 if (!textoNome.isEmpty()){
                     if(!textoEmail.isEmpty()){
-                        if(!textoSenha.isEmpty()){
+                        if(!textoSenha.isEmpty() && (textoSenha.equals(textoConfirmaSenha))){
                             //SE TODOS OS CAMPOS ESTIVEREM PREENCHIDOS
                             usuario = new Usuario();
                             usuario.setEmail(textoEmail);
@@ -86,7 +88,7 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(CadastroActivity.this, "Usuario cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+                    finish();
                 }else{
                     Toast.makeText(CadastroActivity.this, "Erro ao cadastrar usuario!", Toast.LENGTH_SHORT).show();
                 }
