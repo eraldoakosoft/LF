@@ -19,9 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
     }
 
     @Override
@@ -41,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void verificarUsuarioLogado(){
         auth = ConfiguracaoFireBase.getFirebaseAutenticacao();
+
 
         if(auth.getCurrentUser() != null){
             abrirTelaPrincipal();
