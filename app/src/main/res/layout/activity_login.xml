@@ -52,8 +52,13 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="20dp"
         android:text="ENTRAR"
+        android:textSize="30dp"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSenha"
+        android:background="@color/colorPrimaryDark"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

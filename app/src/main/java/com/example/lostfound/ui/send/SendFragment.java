@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.lostfound.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SendFragment extends Fragment {
 
@@ -28,6 +29,8 @@ public class SendFragment extends Fragment {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
+
+
             }
         });
         return root;
