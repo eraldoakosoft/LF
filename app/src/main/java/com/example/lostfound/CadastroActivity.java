@@ -54,7 +54,7 @@ public class CadastroActivity extends AppCompatActivity {
                 // VALIDAR SE OS CAMPOS FORAM PREENCHIDOS
                 if (!textoNome.isEmpty()){
                     if(!textoEmail.isEmpty()){
-                        if(!textoSenha.isEmpty()){
+                        if(!textoSenha.isEmpty() && textoConfirmaSenha.equals(textoSenha)){
                             //SE TODOS OS CAMPOS ESTIVEREM PREENCHIDOS
                             usuario = new Usuario();
                             usuario.setEmail(textoEmail);
@@ -109,6 +109,7 @@ public class CadastroActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     Toast.makeText(CadastroActivity.this, "Erro ao cadastrar usuario!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastroActivity.this, excecao , Toast.LENGTH_SHORT).show();
                 }
             }
         });
