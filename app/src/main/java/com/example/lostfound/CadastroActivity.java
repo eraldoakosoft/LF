@@ -104,11 +104,10 @@ public class CadastroActivity extends AppCompatActivity {
                     }catch (FirebaseAuthUserCollisionException e){
                         excecao = "Esta conta já existe!";
 
-                    }catch (Exception e){
+                    }catch (Exception e) {
                         excecao = "Erro ao cadastrar usuário: " + e.getMessage();
                         e.printStackTrace();
                     }
-                    Toast.makeText(CadastroActivity.this, "Erro ao cadastrar usuario!", Toast.LENGTH_SHORT).show();
                     Toast.makeText(CadastroActivity.this, excecao , Toast.LENGTH_SHORT).show();
                 }
             }
