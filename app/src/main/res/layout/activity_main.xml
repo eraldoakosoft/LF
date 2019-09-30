@@ -14,7 +14,7 @@
         android:layout_marginTop="70dp"
         android:text="@string/acessesuaconta"
         android:textColor="@color/colorWhite"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/bg_botao_azul"
         android:onClick="btnCadastar"
-        android:text="CADASTRE-SE"
+        android:text="Entrar"
         android:textColor="@color/colorAccent"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -38,24 +38,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/bg_botao_azul"
-        android:onClick="btnEntrar"
-        android:text="jÁ TENHO CONTA"
-        android:textColor="@color/colorAccent"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <EditText
         android:id="@+id/editText"
@@ -86,5 +68,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="btnCadastar"
+        android:text="Cadastra-se"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
