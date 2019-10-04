@@ -22,6 +22,9 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 public class CadastroActivity extends AppCompatActivity {
 
+
+    private EditText campoCPF, campoRG, campoTel;
+
     private EditText campoNome, campoEmail, campoSenha, campoCEP, campoConfirmSenha;
     private Button botaoCadastrar;
 
@@ -34,6 +37,10 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
+
+        campoCPF = findViewById(R.id.txtcpf);
+        campoRG = findViewById(R.id.txtrg);
+        campoTel = findViewById(R.id.txtTel);
         campoNome = findViewById(R.id.txtNome);
         campoEmail = findViewById(R.id.txtEmail);
         campoSenha = findViewById(R.id.txtSenha);
@@ -46,6 +53,9 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                String textoCPF = campoCPF.getText().toString();
+                String textoRG = campoRG.getText().toString();
+                String textoTel = campoTel.getText().toString();
                 String textoNome = campoNome.getText().toString();
                 String textoSenha = campoSenha.getText().toString();
                 String textoEmail = campoEmail.getText().toString();
@@ -61,6 +71,9 @@ public class CadastroActivity extends AppCompatActivity {
                             usuario.setEmail(textoEmail);
                             usuario.setNome(textoNome);
                             usuario.setSenha(textoSenha);
+                            usuario.setCpf(textoCPF);
+                            usuario.setRg(textoRG);
+                            usuario.setTel(textoTel);
                             cadastrarUsuario();
 
                         }else{
