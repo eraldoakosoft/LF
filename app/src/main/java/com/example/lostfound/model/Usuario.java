@@ -4,11 +4,18 @@ import com.example.lostfound.config.ConfiguracaoFireBase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 
+import java.sql.Date;
+
 public class Usuario {
     private String idUsuario;
     private String nome;
     private String email;
     private String senha;
+    private String cpf;
+    private String rg;
+    private String telefone;
+    private Date dataNascimento;
+
 
 
     @Exclude
@@ -52,5 +59,37 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 }
