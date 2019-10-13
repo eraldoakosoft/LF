@@ -31,7 +31,7 @@
         android:background="@drawable/bg_botao_azul"
         android:onClick="btnCadastar"
         android:text="Entrar"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

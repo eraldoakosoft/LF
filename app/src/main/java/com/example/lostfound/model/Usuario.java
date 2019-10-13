@@ -14,8 +14,6 @@ public class Usuario {
     private String nome;
     private String email;
     private String senha;
-    private String cpf;
-    private String rg;
     private String telefone;
     private Date dataNascimento;
 
@@ -43,16 +41,8 @@ public class Usuario {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
     public String getRg() {
         return rg;
-    }
-
-    public void setRg(String rg) {
-        this.rg = rg;
     }
 
     public String getTel() {
@@ -88,17 +78,13 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
+
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public String getRg() {
-        return rg;
-    }
+
 
     public void setRg(String rg) {
         this.rg = rg;
