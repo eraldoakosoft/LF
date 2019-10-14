@@ -30,7 +30,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:hint="Nome"
+        android:hint="@string/nome"
         android:textColorHint="@color/colorWhite"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
