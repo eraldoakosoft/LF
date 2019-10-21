@@ -18,4 +18,5 @@
     <string name="menu_send">Sair</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="nome">Nome</string>
+    <string name="cadastrar">CADASTRAR</string>
 </resources>

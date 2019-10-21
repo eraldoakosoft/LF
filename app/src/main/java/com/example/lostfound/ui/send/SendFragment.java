@@ -28,14 +28,10 @@ public class SendFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_send, container, false);
         final TextView textView = root.findViewById(R.id.text_send);
         sendViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                usuario.signOut();
-
-
-
-
-            }
+                    @Override
+                    public void onChanged(@Nullable String s) {
+                        usuario.signOut();
+                    }
         });
         return root;
     }
