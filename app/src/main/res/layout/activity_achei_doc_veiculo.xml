@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AcheiDocumentoActivity">
+    tools:context=".AcheiDocVeiculoActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
@@ -21,15 +21,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Documento"
-            android:textAlignment="center"
+            android:text="Documento Veiculo"
             android:textSize="30sp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="15dp"/>
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
 
         <EditText
             android:id="@+id/editDVNomeCompleto"
@@ -38,9 +36,9 @@
             android:ems="10"
             android:hint="Nome Completo"
             android:inputType="textPersonName"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"/>
 
         <EditText
             android:id="@+id/editDVCPF"
@@ -49,64 +47,40 @@
             android:ems="10"
             android:hint="CPF"
             android:inputType="number"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"/>
 
         <EditText
-            android:id="@+id/editRG"
+            android:id="@+id/editPlaca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="RG"
-            android:inputType="number"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="3dp"/>
-
-        <EditText
-            android:id="@+id/editDataNascimento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Data Nascimento"
-            android:inputType="date"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="3dp"/>
-
-        <EditText
-            android:id="@+id/editNomeMae"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Nome da Mãe"
+            android:hint="Placa"
             android:inputType="textPersonName"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"/>
 
         <EditText
-            android:id="@+id/editNaturalidade"
+            android:id="@+id/editModelo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Naturalidade"
+            android:hint="Modelo / Marca"
             android:inputType="textPersonName"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"/>
 
         <Button
-            android:id="@+id/btnAdicionarDoc"
+            android:id="@+id/btnDVAdicionar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Adicionar"
-            android:textSize="16sp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="15dp"/>
-
-
+            android:textSize="15dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

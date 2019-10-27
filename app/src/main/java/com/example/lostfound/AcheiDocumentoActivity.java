@@ -25,7 +25,7 @@ public class AcheiDocumentoActivity extends AppCompatActivity {
     private TextView txtNaturalidade;
     private Button btnAdicionarDoc;
 
-    private DatabaseReference reference = FirebaseDatabase.getInstance().getReference("objetos");
+    private DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Documentos");
     private Documento documento;
 
     private FirebaseAuth firebaseAuth;
@@ -37,8 +37,8 @@ public class AcheiDocumentoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_achei_documento);
 
 
-        txtNomeCompleto = findViewById(R.id.editNomeCompleto);
-        txtCPF = findViewById(R.id.editCPF);
+        txtNomeCompleto = findViewById(R.id.editDVNomeCompleto);
+        txtCPF = findViewById(R.id.editDVCPF);
         txtRG = findViewById(R.id.editRG);
         txtDataNascimento = findViewById(R.id.editDataNascimento);
         txtNomeMae = findViewById(R.id.editNomeMae);

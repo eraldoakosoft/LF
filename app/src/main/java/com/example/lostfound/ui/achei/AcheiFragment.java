@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.lostfound.AcheiDocVeiculoActivity;
 import com.example.lostfound.AcheiDocumentoActivity;
 import com.example.lostfound.R;
 import com.google.firebase.database.DatabaseReference;
@@ -39,6 +40,13 @@ public class AcheiFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(root.getContext(),AcheiDocumentoActivity.class));
+            }
+        });
+
+        btnDocVei.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(root.getContext(), AcheiDocVeiculoActivity.class));
             }
         });
 
