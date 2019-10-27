@@ -9,6 +9,10 @@
     <string name="action_settings">Settings</string>
     <string name="criesuacontagratis">Crie sua conta grátis</string>
     <string name="acessesuaconta">Acesse sua Conta</string>
+    <string name="descricaoDocumento">CNH - RG - CPF - TÍTULO DE ELEITOR - RESERVISTA </string>
+    <string name="descricaoDocVeiculo">CRLV - RECIBO</string>
+    <string name="descricaoCartao">TODOS OS TIPOS DE CARTÕES</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Perfil</string>
