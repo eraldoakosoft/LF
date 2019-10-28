@@ -1,12 +1,13 @@
 package com.example.lostfound.model;
 
-public class DocumentoVeiculo {
+import java.util.Date;
+
+public class Cartao {
     private String nome;
-    private String CPF;
-    private String placa;
-    private String modelo;
-    private String quemAchou;
+    private String banco;
+    private String digitos;
     private boolean status;
+    private String quemAchou;
     private String data_entrada;
     private String data_saida;
 
@@ -26,14 +27,6 @@ public class DocumentoVeiculo {
         this.data_saida = data_saida;
     }
 
-    public boolean isStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -42,28 +35,28 @@ public class DocumentoVeiculo {
         this.nome = nome;
     }
 
-    public String getCPF() {
-        return CPF;
+    public String getBanco() {
+        return banco;
     }
 
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
+    public void setBanco(String banco) {
+        this.banco = banco;
     }
 
-    public String getPlaca() {
-        return placa;
+    public String getDigitos() {
+        return digitos;
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public void setDigitos(String digitos) {
+        this.digitos = digitos;
     }
 
-    public String getModelo() {
-        return modelo;
+    public boolean isStatus() {
+        return status;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public String getQuemAchou() {

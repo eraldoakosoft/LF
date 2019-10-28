@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lostfound.config.ConfiguracaoFireBase;
 import com.example.lostfound.helper.Base64Custon;
@@ -13,6 +14,10 @@ import com.example.lostfound.model.Documento;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class AcheiDocumentoActivity extends AppCompatActivity {
 
@@ -79,12 +84,22 @@ public class AcheiDocumentoActivity extends AppCompatActivity {
         documento.setDataNascimento(txtDataNascimento.getText().toString());
         documento.setIdQuemAchou( idUsuario );
         documento.setStatus(true);
+        documento.setData_entrada(getDateTime());
+        documento.setData_saida("0000-00-00");
 
         reference.push().setValue(documento);
+        Toast.makeText(AcheiDocumentoActivity.this, "Salvo com Sucesso!", Toast.LENGTH_SHORT).show();
+        finish();
 
 
 
 
+    }
 
+
+    private String getDateTime() {
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 }

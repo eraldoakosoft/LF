@@ -13,6 +13,24 @@ public class Documento {
     private String naturalidade;
     private String idQuemAchou;
     private String dataNascimento;
+    private String data_entrada;
+    private String data_saida;
+
+    public String getData_entrada() {
+        return data_entrada;
+    }
+
+    public void setData_entrada(String data_entrada) {
+        this.data_entrada = data_entrada;
+    }
+
+    public String getData_saida() {
+        return data_saida;
+    }
+
+    public void setData_saida(String data_saida) {
+        this.data_saida = data_saida;
+    }
 
     public String getDataNascimento() {
         return dataNascimento;

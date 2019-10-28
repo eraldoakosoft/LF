@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.lostfound.config.ConfiguracaoFireBase;
 import com.example.lostfound.helper.Base64Custon;
@@ -13,6 +14,10 @@ import com.example.lostfound.model.DocumentoVeiculo;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class AcheiDocVeiculoActivity extends AppCompatActivity {
 
@@ -65,11 +70,22 @@ public class AcheiDocVeiculoActivity extends AppCompatActivity {
         String idUsuario = Base64Custon.codificarBase64(firebaseAuth.getCurrentUser().getEmail());
         documentoVeiculo.setQuemAchou(idUsuario);
         documentoVeiculo.setStatus(true);
+        documentoVeiculo.setData_entrada(getDateTime());
+        documentoVeiculo.setData_saida("");
 
         reference.push().setValue(documentoVeiculo);
+        Toast.makeText(AcheiDocVeiculoActivity.this, "Salvo Com Sucesso!",Toast.LENGTH_SHORT).show();
+        finish();
 
 
 
 
+    }
+
+
+    private String getDateTime() {
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 }

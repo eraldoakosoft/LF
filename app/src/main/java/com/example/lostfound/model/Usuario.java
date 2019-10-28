@@ -16,8 +16,24 @@ public class Usuario {
     private String senha;
     private String telefone;
     private Date dataNascimento;
+    private String data_cadastro;
+    private boolean status;
 
+    public String getData_cadastro() {
+        return data_cadastro;
+    }
 
+    public void setData_cadastro(String data_cadastro) {
+        this.data_cadastro = data_cadastro;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 
     @Exclude
     public String getIdUsuario() {

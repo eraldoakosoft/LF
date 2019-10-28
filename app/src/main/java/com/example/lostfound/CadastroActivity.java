@@ -20,6 +20,10 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class CadastroActivity extends AppCompatActivity {
 
 
@@ -74,6 +78,8 @@ public class CadastroActivity extends AppCompatActivity {
                             usuario.setCpf(textoCPF);
                             usuario.setRg(textoRG);
                             usuario.setTel(textoTel);
+                            usuario.setData_cadastro(getDateTime());
+                            usuario.setStatus(true);
                             cadastrarUsuario();
 
                         }else{
@@ -131,5 +137,12 @@ public class CadastroActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+
+    private String getDateTime() {
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        return dateFormat.format(date);
     }
 }

@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.lostfound.AcheiCartaoActivity;
 import com.example.lostfound.AcheiDocVeiculoActivity;
 import com.example.lostfound.AcheiDocumentoActivity;
 import com.example.lostfound.R;
@@ -47,6 +48,13 @@ public class AcheiFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(root.getContext(), AcheiDocVeiculoActivity.class));
+            }
+        });
+
+        btnCartoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(root.getContext(), AcheiCartaoActivity.class));
             }
         });
 
