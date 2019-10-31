@@ -13,8 +13,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.lostfound.LoginActivity;
-import com.example.lostfound.Main2Activity;
 import com.example.lostfound.MainActivity;
 import com.example.lostfound.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,7 +32,7 @@ public class SendFragment extends Fragment {
                     public void onChanged(@Nullable String s) {
 
                         usuario.signOut();
-                        startActivity(new Intent(root.getContext(), LoginActivity.class));
+                        startActivity(new Intent(root.getContext(), MainActivity.class));
                         getActivity().finish();
 
                     }
