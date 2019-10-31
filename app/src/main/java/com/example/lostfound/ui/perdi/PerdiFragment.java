@@ -1,4 +1,4 @@
-package com.example.lostfound.ui.slideshow;
+package com.example.lostfound.ui.perdi;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.lostfound.R;
 
-public class SlideshowFragment extends Fragment {
+public class PerdiFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private PerdiViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+                ViewModelProviders.of(this).get(PerdiViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_perdii, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
         slideshowViewModel.getText().observe(this, new Observer<String>() {
             @Override

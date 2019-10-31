@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.lostfound.ui.slideshow.SlideshowFragment"
+        android:name="com.example.lostfound.ui.perdi.PerdiFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_perdii" />
 
     <fragment
         android:id="@+id/nav_tools"
