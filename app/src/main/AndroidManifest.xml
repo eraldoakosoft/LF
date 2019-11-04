@@ -14,16 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AcheiCartaoActivity"></activity>
-        <activity android:name=".AcheiDocVeiculoActivity" />
-        <activity android:name=".AcheiDocumentoActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.lost.AcheiCartaoActivity"></activity>
+        <activity android:name="com.example.lost.AcheiDocVeiculoActivity" />
+        <activity android:name="com.example.lost.AcheiDocumentoActivity" />
+        <activity android:name="com.example.lost.MainActivity" />
         <activity
-            android:name=".Main2Activity"
+            android:name="com.example.lost.Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadastroActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.example.lost.CadastroActivity" />
+        <activity android:name="com.example.lost.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
